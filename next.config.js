@@ -3,7 +3,7 @@
 const repository = "ValoStore_web";
 
 const nextConfig = {
-  output: 'export',
+  distDir: 'dist',
   basePath: 'ValoStore_web',
   reactStrictMode: true,
   images: {
