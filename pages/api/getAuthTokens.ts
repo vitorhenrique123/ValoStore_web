@@ -4,7 +4,7 @@ import { wrapper } from "axios-cookiejar-support";
 import { NextApiRequest, NextApiResponse } from "next";
 import { CookieJar } from "tough-cookie";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export default async function getAuthTokens(
   req: NextApiRequest,
