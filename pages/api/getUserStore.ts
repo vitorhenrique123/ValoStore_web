@@ -3,6 +3,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 import fs from "fs/promises";
 import { SKINS_JSON, UpdateStoreResponse } from "./updateStore";
 
+export const runtime = "edge";
+
 export default async function getUserStore(
   req: NextApiRequest,
   res: NextApiResponse
