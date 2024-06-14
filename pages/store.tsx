@@ -5,7 +5,7 @@ import type { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Countdown from "react-countdown";
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 const Store: NextPage = () => {
   const router = useRouter();
