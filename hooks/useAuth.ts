@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 const __store_LocalStorageKey = "__store_RiotAuthBundle";
 
-export const runtime = "experimental-edge";
 
 export type RiotAuthBundle = AuthTokensResponse & { expires: Date };
 
