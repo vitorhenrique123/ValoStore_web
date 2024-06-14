@@ -5,7 +5,9 @@ import path from "path";
 import fs from "fs/promises";
 
 const { JSON_UPLOAD_SECRET } = process.env;
-export const runtime = "experimental-edge";
+export const config = {
+  runtime: 'edge',
+}
 
 export type SkinTier = "Select" | "Deluxe" | "Premium" | "Ultra" | "Exclusive";
 export type ValorantApiSkin = {

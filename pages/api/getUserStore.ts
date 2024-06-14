@@ -2,7 +2,9 @@ import axios from "axios";
 import { NextApiRequest, NextApiResponse } from "next";
 import fs from "fs/promises";
 import { SKINS_JSON, UpdateStoreResponse } from "./updateStore";
-export const runtime = "experimental-edge";
+export const config = {
+  runtime: 'edge',
+}
 
 export default async function getUserStore(
   req: NextApiRequest,
