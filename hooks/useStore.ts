@@ -2,6 +2,8 @@ import { UserStoreResponse } from "pages/api/getUserStore";
 import { useEffect, useState } from "react";
 import { RiotAuthBundle } from "hooks/useAuth";
 
+export const runtime = "edge";
+
 export const useStore = (authBundle: RiotAuthBundle) => {
   const [store, setStore] = useState<UserStoreResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
