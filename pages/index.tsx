@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { Page, Input, Text, Dot, Button, Grid, Spacer } from "@geist-ui/core";
 
 type FormData = { username: string; password: string; region: string };
+export const runtime = "edge";
 
 const Home: NextPage = () => {
   const {
